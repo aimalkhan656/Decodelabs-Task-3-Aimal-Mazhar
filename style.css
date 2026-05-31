@@ -1,0 +1,266 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif,sans-serif;
+    background:#f4f4f4;
+    color:#222;
+    transition:0.4s;
+}
+
+/* DARK MODE */
+
+body.dark{
+    background:#111;
+    color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:#222;
+
+    color:white;
+
+    position:sticky;
+
+    top:0;
+}
+
+/* LOGO */
+
+.logo{
+    font-size:28px;
+
+    font-weight:bold;
+}
+
+/* NAV LINKS */
+
+.nav-links{
+    display:flex;
+
+    list-style:none;
+
+    gap:25px;
+}
+
+.nav-links a{
+    color:white;
+
+    text-decoration:none;
+
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#00bcd4;
+}
+
+/* BUTTONS */
+
+button{
+    padding:12px 24px;
+
+    border:none;
+
+    background:#00bcd4;
+
+    color:white;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    margin:10px;
+}
+
+button:hover{
+    transform:translateY(-3px);
+
+    background:#0097a7;
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* HAMBURGER */
+
+.hamburger{
+    display:none;
+
+    font-size:28px;
+
+    cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+    text-align:center;
+
+    padding:100px 8%;
+}
+
+/* HEADING */
+
+.hero h1{
+    font-size:52px;
+
+    margin-bottom:20px;
+}
+
+/* PARAGRAPH */
+
+.hero p{
+    margin-bottom:30px;
+
+    font-size:18px;
+}
+
+/* EXTRA CONTENT */
+
+.extra-content{
+    text-align:center;
+
+    padding:60px 8%;
+
+    background:white;
+
+    display:none;
+}
+
+/* SERVICES */
+
+.services{
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    padding:80px 8%;
+
+    flex-wrap:wrap;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+
+    width:300px;
+
+    padding:40px;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card i{
+    font-size:50px;
+
+    color:#00bcd4;
+
+    margin-bottom:20px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#222;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+/* DARK MODE CARD */
+
+body.dark .card{
+    background:#222;
+}
+
+body.dark .extra-content{
+    background:#222;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    /* HAMBURGER */
+
+    .hamburger{
+        display:block;
+    }
+
+    /* NAV LINKS */
+
+    .nav-links{
+        position:absolute;
+
+        top:80px;
+
+        left:0;
+
+        width:100%;
+
+        background:#222;
+
+        flex-direction:column;
+
+        text-align:center;
+
+        display:none;
+
+        padding:20px 0;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    /* HERO */
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    /* SERVICES */
+
+    .services{
+        flex-direction:column;
+
+        align-items:center;
+    }
+}
